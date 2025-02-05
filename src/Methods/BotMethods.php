@@ -2,6 +2,7 @@
 
 namespace Slavasamsonow\TelegramBotApi\Methods;
 
+use Slavasamsonow\TelegramBotApi\ArrayOfObject\ArrayOfBotCommands;
 use Slavasamsonow\TelegramBotApi\Exceptions\TelegramBotApiException;
 use Slavasamsonow\TelegramBotApi\Objects\BotDescription;
 use Slavasamsonow\TelegramBotApi\Objects\BotName;
@@ -36,7 +37,7 @@ trait BotMethods
      */
     public function getMe(): User
     {
-        return User::fromResponse($this->get('getMe'));
+        return User::fromResponse($this->get('getMe')['result']);
     }
 
     // TODO: getUserProfilePhotos
@@ -53,7 +54,7 @@ trait BotMethods
      */
     public function getFile(GetFileRequest $request): File
     {
-        return File::fromResponse($this->post('getFile', $request));
+        return File::fromResponse($this->post('getFile', $request)['result']);
     }
 
     /**
@@ -64,7 +65,7 @@ trait BotMethods
      */
     public function getBusinessConnection(GetBusinessConnectionRequest $request): BusinessConnection
     {
-        return BusinessConnection::fromResponse($this->post('getBusinessConnection', $request));
+        return BusinessConnection::fromResponse($this->post('getBusinessConnection', $request)['result']);
     }
 
     /**
@@ -92,12 +93,12 @@ trait BotMethods
     /**
      * @param GetMyCommandsRequest $request
      *
-     * @return ArrayOfBotCommandsRequest
+     * @return ArrayOfBotCommands
      * @throws TelegramBotApiException
      */
-    public function getMyCommands(GetMyCommandsRequest $request): ArrayOfBotCommandsRequest
+    public function getMyCommands(GetMyCommandsRequest $request): ArrayOfBotCommands
     {
-        return ArrayOfBotCommandsRequest::fromResponse($this->post('getMyCommands', $request));
+        return ArrayOfBotCommands::fromResponse($this->post('getMyCommands', $request)['result']);
     }
 
     /**
@@ -119,7 +120,7 @@ trait BotMethods
      */
     public function getMyName(GetMyNameRequest $request): BotName
     {
-        return BotName::fromResponse($this->post('getMyName', $request));
+        return BotName::fromResponse($this->post('getMyName', $request)['result']);
     }
 
     /**
@@ -141,7 +142,7 @@ trait BotMethods
      */
     public function getMyDescription(GetMyDescriptionRequest $request): BotDescription
     {
-        return BotDescription::fromResponse($this->post('getMyDescription', $request));
+        return BotDescription::fromResponse($this->post('getMyDescription', $request)['result']);
     }
 
     /**
@@ -163,7 +164,7 @@ trait BotMethods
      */
     public function getMyShortDescription(GetMyShortDescriptionRequest $request): BotShortDescription
     {
-        return BotShortDescription::fromResponse($this->post('getMyShortDescription', $request));
+        return BotShortDescription::fromResponse($this->post('getMyShortDescription', $request)['result']);
     }
 
     /**
@@ -185,7 +186,7 @@ trait BotMethods
      */
     public function getChatMenuButton(GetChatMenuButtonRequest $request): MenuButton
     {
-        return MenuButton::fromResponse($this->post('getChatMenuButton', $request));
+        return MenuButton::fromResponse($this->post('getChatMenuButton', $request)['result']);
     }
 
     /**
@@ -208,6 +209,6 @@ trait BotMethods
     public function getMyDefaultAdministratorRights(
         GetMyDefaultAdministratorRightsRequest $request
     ): ChatAdministratorRights {
-        return ChatAdministratorRights::fromResponse($this->post('getMyDefaultAdministratorRights', $request));
+        return ChatAdministratorRights::fromResponse($this->post('getMyDefaultAdministratorRights', $request)['result']);
     }
 }

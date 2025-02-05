@@ -126,7 +126,7 @@ trait ChatMethods
      */
     public function getChat(GetChatRequest $request): ChatFullInfo
     {
-        return ChatFullInfo::fromResponse($this->post('getChat', $request));
+        return ChatFullInfo::fromResponse($this->post('getChat', $request)['result']);
     }
 
     /**

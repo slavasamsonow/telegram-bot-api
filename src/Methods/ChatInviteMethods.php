@@ -34,7 +34,7 @@ trait ChatInviteMethods
      */
     public function createChatInviteLink(CreateChatInviteLinkRequest $request): ChatInviteLink
     {
-        return ChatInviteLink::fromResponse($this->post('createChatInviteLink', $request));
+        return ChatInviteLink::fromResponse($this->post('createChatInviteLink', $request)['result']);
     }
 
     /**
@@ -45,7 +45,7 @@ trait ChatInviteMethods
      */
     public function editChatInviteLink(EditChatInviteLinkRequest $request): ChatInviteLink
     {
-        return ChatInviteLink::fromResponse($this->post('editChatInviteLink', $request));
+        return ChatInviteLink::fromResponse($this->post('editChatInviteLink', $request)['result']);
     }
 
     /**
@@ -56,7 +56,7 @@ trait ChatInviteMethods
      */
     public function createChatSubscriptionInviteLink(CreateChatSubscriptionInviteLinkRequest $request): ChatInviteLink
     {
-        return ChatInviteLink::fromResponse($this->post('createChatSubscriptionInviteLink', $request));
+        return ChatInviteLink::fromResponse($this->post('createChatSubscriptionInviteLink', $request)['result']);
     }
 
     /**
@@ -67,7 +67,7 @@ trait ChatInviteMethods
      */
     public function editChatSubscriptionInviteLink(EditChatSubscriptionInviteLinkRequest $request): ChatInviteLink
     {
-        return ChatInviteLink::fromResponse($this->post('editChatSubscriptionInviteLink', $request));
+        return ChatInviteLink::fromResponse($this->post('editChatSubscriptionInviteLink', $request)['result']);
     }
 
     /**
@@ -78,7 +78,7 @@ trait ChatInviteMethods
      */
     public function revokeChatInviteLink(RevokeChatInviteLinkRequest $request): ChatInviteLink
     {
-        return ChatInviteLink::fromResponse($this->post('revokeChatInviteLink', $request));
+        return ChatInviteLink::fromResponse($this->post('revokeChatInviteLink', $request)['result']);
     }
 
     /**

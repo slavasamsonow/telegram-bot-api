@@ -105,7 +105,7 @@ trait ChatMemberMethods
      */
     public function getChatAdministrators(GetChatAdministratorsRequest $request): ArrayOfChatMembers
     {
-        return ArrayOfChatMembers::fromResponse($this->post('getChatAdministrators', $request));
+        return ArrayOfChatMembers::fromResponse($this->post('getChatAdministrators', $request)['result']);
     }
 
     /**
@@ -127,7 +127,7 @@ trait ChatMemberMethods
      */
     public function getChatMember(GetChatMemberRequest $request): ChatMember
     {
-        return ChatMember::fromResponse($this->post('getChatMember', $request));
+        return ChatMember::fromResponse($this->post('getChatMember', $request)['result']);
     }
 
     /**
@@ -138,6 +138,6 @@ trait ChatMemberMethods
      */
     public function getUserChatBoosts(GetUserChatBoostsRequest $request): ArrayOfChatBoosts
     {
-        return ArrayOfChatBoosts::fromResponse($this->post('getUserChatBoosts', $request));
+        return ArrayOfChatBoosts::fromResponse($this->post('getUserChatBoosts', $request)['result']);
     }
 }

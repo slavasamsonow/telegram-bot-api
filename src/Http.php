@@ -59,9 +59,12 @@ trait Http
     {
         $url = $this->endpoint . $method;
         if ($data != []) {
-            //            $data = ['json' => $data->toArray()];
-            $data = ['multipart' => $data->toMultipart()];
-            //            dd($data);
+            $multipart = $data->toMultipart();
+            if ($multipart != []) {
+                $data = ['multipart' => $data->toMultipart()];
+            } else {
+                $data = [];
+            }
         }
         try {
             return $this->sendRequest('POST', $url, $data);
@@ -82,8 +85,6 @@ trait Http
     protected function sendRequest($method, string $url, array $data = []): array
     {
         try {
-            $this->getClient()->request($method, 'https://webhook.site/2d5527eb-87c8-4c3f-a12c-f1aa85823216', $data);
-
             $response = $this->getClient()->request($method, $url, $data);
             return json_decode($response->getBody(), true);
         } catch (ClientException $e) {
