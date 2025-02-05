@@ -8,7 +8,7 @@
     "api",
     "telegram bot api"
   ],
-  "homepage": "https://github/slavasamsonow/telegram-bot-api",
+  "homepage": "https://github.com/slavasamsonow/telegram-bot-api",
   "type": "library",
   "license": "MIT",
   "autoload": {
