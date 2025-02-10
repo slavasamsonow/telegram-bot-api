@@ -19,7 +19,7 @@ trait UrlOptionalTrait
      */
     public function setUrl(?string $url): void
     {
-        if (!filter_var($url, FILTER_VALIDATE_URL)) {
+        if ($url !== null && !filter_var($url, FILTER_VALIDATE_URL)) {
             throw new TelegramBotApiException('Url is not url');
         }
         $this->url = $url;
