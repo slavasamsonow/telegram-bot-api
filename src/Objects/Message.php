@@ -4,6 +4,7 @@ namespace Slavasamsonow\TelegramBotApi\Objects;
 
 use Slavasamsonow\TelegramBotApi\ArrayOfObject\ArrayOfMessageEntities;
 use Slavasamsonow\TelegramBotApi\ArrayOfObject\ArrayOfPhotoSizes;
+use Slavasamsonow\TelegramBotApi\ArrayOfObject\ArrayOfUsers;
 
 class Message extends BaseTelegramObject
 {
@@ -54,7 +55,7 @@ class Message extends BaseTelegramObject
         // TODO: poll
         // TODO: venue
         'location' => Location::class,
-        // TODO: new_chat_members
+        'new_chat_members' => ArrayOfUsers::class,
         'left_chat_member' => User::class,
         'new_chat_title' => true,
         'new_chat_photo' => ArrayOfPhotoSizes::class,
@@ -283,7 +284,10 @@ class Message extends BaseTelegramObject
      */
     public readonly ?Location $location;
 
-    // TODO: new_chat_members
+    /**
+     * @var ArrayOfUsers|null
+     */
+    public readonly ?ArrayOfUsers $newChatMembers;
 
     /**
      * @var User|null
@@ -966,6 +970,24 @@ class Message extends BaseTelegramObject
     public function getLocation(): ?Location
     {
         return $this->location;
+    }
+
+    /**
+     * @param ArrayOfUsers|null $newChatMembers
+     *
+     * @return void
+     */
+    public function setNewChatMembers(?ArrayOfUsers $newChatMembers): void
+    {
+        $this->newChatMembers = $newChatMembers;
+    }
+
+    /**
+     * @return ArrayOfUsers|null
+     */
+    public function getNewChatMembers(): ?ArrayOfUsers
+    {
+        return $this->newChatMembers;
     }
 
     /**
