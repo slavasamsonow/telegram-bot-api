@@ -46,7 +46,7 @@ class Message extends BaseTelegramObject
         'video_note' => VideoNote::class,
         'voice' => Voice::class,
         'caption' => true,
-        // TODO: caption_entities
+        'caption_entities' => ArrayOfMessageEntities::class,
         'show_caption_above_media' => true,
         'has_media_spoiler' => true,
         // TODO: contact
@@ -257,7 +257,10 @@ class Message extends BaseTelegramObject
      */
     public readonly ?string $caption;
 
-    // TODO: caption_entities
+    /**
+     * @var ArrayOfMessageEntities|null
+     */
+    public readonly ?ArrayOfMessageEntities $captionEntities;
 
     /**
      * @var bool|null
@@ -916,6 +919,24 @@ class Message extends BaseTelegramObject
     public function getCaption(): ?string
     {
         return $this->caption;
+    }
+
+    /**
+     * @param ArrayOfMessageEntities|null $captionEntities
+     *
+     * @return void
+     */
+    protected function setCaptionEntities(?ArrayOfMessageEntities $captionEntities): void
+    {
+        $this->captionEntities = $captionEntities;
+    }
+
+    /**
+     * @return ArrayOfMessageEntities|null
+     */
+    public function getCaptionEntities(): ?ArrayOfMessageEntities
+    {
+        return $this->captionEntities;
     }
 
     /**
