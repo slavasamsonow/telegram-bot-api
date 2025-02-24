@@ -23,7 +23,7 @@ class Message extends BaseTelegramObject
         'is_automatic_forward' => true,
         'reply_to_message' => Message::class,
         // TODO: external_reply
-        // TODO: quote
+        'quote' => TextQuote::class,
         // TODO: reply_to_story
         'via_bot' => User::class,
         'edit_date' => true,
@@ -160,7 +160,10 @@ class Message extends BaseTelegramObject
 
     // TODO: add external_reply
 
-    // TODO: add quote
+    /**
+     * @var TextQuote|null
+     */
+    public readonly ?TextQuote $quote;
 
     // TODO: reply_to_story
 
@@ -613,6 +616,21 @@ class Message extends BaseTelegramObject
     public function getReplyToMessage(): ?Message
     {
         return $this->replyToMessage;
+    }
+
+    /**
+     * @param TextQuote|null $quote
+     *
+     * @return void
+     */
+    protected function setQuote(?TextQuote $quote): void
+    {
+        $this->quote = $quote;
+    }
+
+    public function getQuote(): ?TextQuote
+    {
+        return $this->quote;
     }
 
     /**
