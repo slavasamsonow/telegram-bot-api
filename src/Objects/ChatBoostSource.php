@@ -22,27 +22,28 @@ class ChatBoostSource extends BaseTelegramObject
     /**
      * @var ChatBoostSourceEnum
      */
-    protected ChatBoostSourceEnum $source;
+    public readonly ChatBoostSourceEnum $source;
 
     /**
      * @var User
      */
-    protected User $user;
+    public readonly User $user;
 
     /**
      * @var int|null
      */
-    protected ?int $giveawayMessageId;
+    public readonly ?int $giveawayMessageId;
 
     /**
      * @var int|null
      */
-    protected ?int $prizeStarCount;
+    public readonly ?int $prizeStarCount;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isUnclaimed;
+    public readonly ?bool $isUnclaimed;
+
 
     /**
      * @param ChatBoostSourceEnum $source

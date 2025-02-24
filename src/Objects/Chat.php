@@ -22,37 +22,38 @@ class Chat extends BaseTelegramObject
     /**
      * @var int
      */
-    protected int $id;
+    public readonly int $id;
 
     /**
      * @var ChatTypeEnum
      */
-    protected ChatTypeEnum $type;
+    public readonly ChatTypeEnum $type;
 
     /**
      * @var string|null
      */
-    protected ?string $title;
+    public readonly ?string $title;
 
     /**
      * @var string|null
      */
-    protected ?string $username;
+    public readonly ?string $username;
 
     /**
      * @var string|null
      */
-    protected ?string $firstName;
+    public readonly ?string $firstName;
 
     /**
      * @var string|null
      */
-    protected ?string $lastName;
+    public readonly ?string $lastName;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isForum;
+    public readonly ?bool $isForum;
+
 
     /**
      * @param int $id

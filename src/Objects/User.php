@@ -26,67 +26,67 @@ class User extends BaseTelegramObject
     /**
      * @var int
      */
-    protected int $id;
+    public readonly int $id;
 
     /**
      * @var bool
      */
-    protected bool $isBot;
+    public readonly bool $isBot;
 
     /**
      * @var string
      */
-    protected string $firstName;
+    public readonly string $firstName;
 
     /**
      * @var string|null
      */
-    protected ?string $lastName;
+    public readonly ?string $lastName;
 
     /**
      * @var string|null
      */
-    protected ?string $username;
+    public readonly ?string $username;
 
     /**
      * @var string|null
      */
-    protected ?string $languageCode;
+    public readonly ?string $languageCode;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isPremium;
+    public readonly ?bool $isPremium;
 
     /**
      * @var bool|null
      */
-    protected ?bool $addedToAttachmentMenu;
+    public readonly ?bool $addedToAttachmentMenu;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canJoinGroups;
+    public readonly ?bool $canJoinGroups;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canReadAllGroupMessages;
+    public readonly ?bool $canReadAllGroupMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $supportsInlineQueries;
+    public readonly ?bool $supportsInlineQueries;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canConnectToBusiness;
+    public readonly ?bool $canConnectToBusiness;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasMainWebApp;
+    public readonly ?bool $hasMainWebApp;
 
 
     /**

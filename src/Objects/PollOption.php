@@ -18,17 +18,18 @@ class PollOption extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $text;
+    public readonly string $text;
 
     /**
      * @var ArrayOfMessageEntities
      */
-    protected ArrayOfMessageEntities $textEntities;
+    public readonly ArrayOfMessageEntities $textEntities;
 
     /**
      * @var int
      */
-    protected int $voterCount;
+    public readonly int $voterCount;
+
 
     /**
      * @param string $text

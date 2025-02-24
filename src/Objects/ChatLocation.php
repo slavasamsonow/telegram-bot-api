@@ -15,12 +15,13 @@ class ChatLocation extends BaseTelegramObject
     /**
      * @var Location
      */
-    protected Location $location;
+    public readonly Location $location;
 
     /**
      * @var string
      */
-    protected string $address;
+    public readonly string $address;
+
 
     /**
      * @param Location $location

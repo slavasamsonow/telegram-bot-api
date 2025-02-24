@@ -14,7 +14,8 @@ class BotShortDescription extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $shortDescription;
+    public readonly string $shortDescription;
+
 
     /**
      * @param string $shortDescription

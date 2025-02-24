@@ -18,27 +18,27 @@ class Voice extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var int
      */
-    protected int $duration;
+    public readonly int $duration;
 
     /**
      * @var string|null
      */
-    protected ?string $mimeType;
+    public readonly ?string $mimeType;
 
     /**
      * @var int|null
      */
-    protected ?int $fileSize;
+    public readonly ?int $fileSize;
 
 
     /**

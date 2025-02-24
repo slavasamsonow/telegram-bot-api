@@ -18,27 +18,28 @@ class PhotoSize extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var int
      */
-    protected int $width;
+    public readonly int $width;
 
     /**
      * @var int
      */
-    protected int $height;
+    public readonly int $height;
 
     /**
      * @var int
      */
-    protected int $fileSize;
+    public readonly int $fileSize;
+
 
     /**
      * @param string $fileId

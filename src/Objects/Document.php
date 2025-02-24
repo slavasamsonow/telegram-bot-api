@@ -19,32 +19,33 @@ class Document extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var PhotoSize|null
      */
-    protected ?PhotoSize $thumbnail;
+    public readonly ?PhotoSize $thumbnail;
 
     /**
      * @var string|null
      */
-    protected ?string $fileName;
+    public readonly ?string $fileName;
 
     /**
      * @var string|null
      */
-    protected ?string $mimeType;
+    public readonly ?string $mimeType;
 
     /**
      * @var int|null
      */
-    protected ?int $fileSize;
+    public readonly ?int $fileSize;
+
 
     /**
      * @param string $fileId

@@ -17,22 +17,23 @@ class ChatPhoto extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $smallFileId;
+    public readonly string $smallFileId;
 
     /**
      * @var string
      */
-    protected string $smallFileUniqueId;
+    public readonly string $smallFileUniqueId;
 
     /**
      * @var string
      */
-    protected string $bigFileId;
+    public readonly string $bigFileId;
 
     /**
      * @var string
      */
-    protected string $bigFileUniqueId;
+    public readonly string $bigFileUniqueId;
+
 
     /**
      * @param string $smallFileId

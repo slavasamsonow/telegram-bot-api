@@ -15,12 +15,13 @@ class BusinessLocation extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $address;
+    public readonly string $address;
 
     /**
      * @var Location|null
      */
-    protected ?Location $location;
+    public readonly ?Location $location;
+
 
     /**
      * @param string $address

@@ -18,17 +18,18 @@ class ReactionType extends BaseTelegramObject
     /**
      * @var ReactionTypeEnum
      */
-    protected ReactionTypeEnum $type;
+    public readonly ReactionTypeEnum $type;
 
     /**
      * @var string|null
      */
-    protected ?string $emoji;
+    public readonly ?string $emoji;
 
     /**
      * @var string|null
      */
-    protected ?string $customEmojiId;
+    public readonly ?string $customEmojiId;
+
 
     /**
      * @param ReactionTypeEnum $type

@@ -19,32 +19,33 @@ class Location extends BaseTelegramObject
     /**
      * @var float
      */
-    protected float $latitude;
+    public readonly float $latitude;
 
     /**
      * @var float
      */
-    protected float $longitude;
+    public readonly float $longitude;
 
     /**
      * @var float|null
      */
-    protected ?float $horizontalAccuracy;
+    public readonly ?float $horizontalAccuracy;
 
     /**
      * @var int|null
      */
-    protected ?int $livePeriod;
+    public readonly ?int $livePeriod;
 
     /**
      * @var int|null
      */
-    protected ?int $heading;
+    public readonly ?int $heading;
 
     /**
      * @var int|null
      */
-    protected ?int $proximityAlertRadius;
+    public readonly ?int $proximityAlertRadius;
+
 
     /**
      * @param float $latitude

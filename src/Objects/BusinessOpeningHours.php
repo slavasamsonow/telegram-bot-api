@@ -17,12 +17,13 @@ class BusinessOpeningHours extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $timeZoneName;
+    public readonly string $timeZoneName;
 
     /**
      * @var ArrayOfOpeningHours
      */
-    protected ArrayOfOpeningHours $openingHours;
+    public readonly ArrayOfOpeningHours $openingHours;
+
 
     /**
      * @param string $timeZoneName

@@ -22,37 +22,38 @@ class MessageEntity extends BaseTelegramObject
     /**
      * @var MessageEntityTypeEnum
      */
-    protected MessageEntityTypeEnum $type;
+    public readonly MessageEntityTypeEnum $type;
 
     /**
      * @var int
      */
-    protected int $offset;
+    public readonly int $offset;
 
     /**
      * @var int
      */
-    protected int $length;
+    public readonly int $length;
 
     /**
      * @var string|null
      */
-    protected ?string $url;
+    public readonly ?string $url;
 
     /**
      * @var User|null
      */
-    protected ?User $user;
+    public readonly ?User $user;
 
     /**
      * @var string|null
      */
-    protected ?string $language;
+    public readonly ?string $language;
 
     /**
      * @var string|null
      */
-    protected ?string $customEmojiId;
+    public readonly ?string $customEmojiId;
+
 
     /**
      * @return MessageEntityTypeEnum

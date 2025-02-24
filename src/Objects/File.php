@@ -17,22 +17,23 @@ class File extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var int
      */
-    protected int $fileSize;
+    public readonly int $fileSize;
 
     /**
      * @var string
      */
-    protected string $filePath;
+    public readonly string $filePath;
+
 
     /**
      * @param string $fileId

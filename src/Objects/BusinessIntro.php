@@ -16,17 +16,18 @@ class BusinessIntro
     /**
      * @var string|null
      */
-    protected ?string $title;
+    public readonly ?string $title;
 
     /**
      * @var string|null
      */
-    protected ?string $message;
+    public readonly ?string $message;
 
     /**
      * @var Sticker|null
      */
-    protected ?Sticker $sticker;
+    public readonly ?Sticker $sticker;
+
 
     /**
      * @param string|null $title

@@ -98,64 +98,64 @@ class Message extends BaseTelegramObject
     /**
      * @var int
      */
-    protected int $messageId;
+    public readonly int $messageId;
 
     /**
      * @var int|null
      */
-    protected ?int $messageThreadId;
+    public readonly ?int $messageThreadId;
 
     /**
      * @var User|null
      */
-    protected ?User $from;
+    public readonly ?User $from;
 
     /**
      * @var Chat|null
      */
-    protected ?Chat $senderChat;
+    public readonly ?Chat $senderChat;
 
     /**
      * @var int|null
      */
-    protected ?int $senderBoostCount;
+    public readonly ?int $senderBoostCount;
 
     /**
      * @var User|null
      */
-    protected ?User $senderBusinessBot;
+    public readonly ?User $senderBusinessBot;
 
     /**
      * @var int
      */
-    protected int $date;
+    public readonly int $date;
 
     /**
      * @var string|null
      */
-    protected ?string $businessConnectionId;
+    public readonly ?string $businessConnectionId;
 
     /**
      * @var Chat
      */
-    protected Chat $chat;
+    public readonly Chat $chat;
 
     // TODO: add forward_origin
 
     /**
      * @var bool|null
      */
-    protected ?bool $isTopicMessage;
+    public readonly ?bool $isTopicMessage;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isAutomaticForward;
+    public readonly ?bool $isAutomaticForward;
 
     /**
      * @var Message|null
      */
-    protected ?Message $replyToMessage;
+    public readonly ?Message $replyToMessage;
 
     // TODO: add external_reply
 
@@ -166,107 +166,107 @@ class Message extends BaseTelegramObject
     /**
      * @var User|null
      */
-    protected ?User $viaBot;
+    public readonly ?User $viaBot;
 
     /**
      * @var int|null
      */
-    protected ?int $editDate;
+    public readonly ?int $editDate;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasProtectedContent;
+    public readonly ?bool $hasProtectedContent;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isFromOffline;
+    public readonly ?bool $isFromOffline;
 
     /**
      * @var string|null
      */
-    protected ?string $mediaGroupId;
+    public readonly ?string $mediaGroupId;
 
     /**
      * @var string|null
      */
-    protected ?string $authorSignature;
+    public readonly ?string $authorSignature;
 
     /**
      * @var string|null
      */
-    protected ?string $text;
+    public readonly ?string $text;
 
     /**
      * @var ArrayOfMessageEntities|null
      */
-    protected ?ArrayOfMessageEntities $entities;
+    public readonly ?ArrayOfMessageEntities $entities;
 
     // TODO: link_preview_options
 
     /**
      * @var string|null
      */
-    protected ?string $effectId;
+    public readonly ?string $effectId;
 
     // TODO: animation
 
     /**
      * @var Audio|null
      */
-    protected ?Audio $audio;
+    public readonly ?Audio $audio;
 
     /**
      * @var Document|null
      */
-    protected ?Document $document;
+    public readonly ?Document $document;
 
     // TODO: paid_media
 
     /**
      * @var ArrayOfPhotoSizes|null
      */
-    protected ?ArrayOfPhotoSizes $photo;
+    public readonly ?ArrayOfPhotoSizes $photo;
 
     /**
      * @var Sticker|null
      */
-    protected ?Sticker $sticker;
+    public readonly ?Sticker $sticker;
 
     // TODO: story
 
     /**
      * @var Video|null
      */
-    protected ?Video $video;
+    public readonly ?Video $video;
 
     /**
      * @var VideoNote|null
      */
-    protected ?VideoNote $videoNote;
+    public readonly ?VideoNote $videoNote;
 
     /**
      * @var Voice|null
      */
-    protected ?Voice $voice;
+    public readonly ?Voice $voice;
 
     /**
      * @var string|null
      */
-    protected ?string $caption;
+    public readonly ?string $caption;
 
     // TODO: caption_entities
 
     /**
      * @var bool|null
      */
-    protected ?bool $showCaptionAboveMedia;
+    public readonly ?bool $showCaptionAboveMedia;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasMediaSpoiler;
+    public readonly ?bool $hasMediaSpoiler;
 
     // TODO: contact
 
@@ -281,56 +281,56 @@ class Message extends BaseTelegramObject
     /**
      * @var Location|null
      */
-    protected ?Location $location;
+    public readonly ?Location $location;
 
     // TODO: new_chat_members
 
     /**
      * @var User|null
      */
-    protected ?User $leftChatMember;
+    public readonly ?User $leftChatMember;
 
     /**
      * @var string|null
      */
-    protected ?string $newChatTitle;
+    public readonly ?string $newChatTitle;
 
     /**
      * @var ArrayOfPhotoSizes|null
      */
-    protected ?ArrayOfPhotoSizes $newChatPhoto;
+    public readonly ?ArrayOfPhotoSizes $newChatPhoto;
 
     /**
      * @var bool|null
      */
-    protected ?bool $deleteChatPhoto;
+    public readonly ?bool $deleteChatPhoto;
 
     /**
      * @var bool|null
      */
-    protected ?bool $groupChatCreated;
+    public readonly ?bool $groupChatCreated;
 
     /**
      * @var bool|null
      */
-    protected ?bool $supergroupChatCreated;
+    public readonly ?bool $supergroupChatCreated;
 
     /**
      * @var bool|null
      */
-    protected ?bool $channelChatCreated;
+    public readonly ?bool $channelChatCreated;
 
     // TODO: message_auto_delete_timer_changed
 
     /**
      * @var int|null
      */
-    protected ?int $migrateToChatId;
+    public readonly ?int $migrateToChatId;
 
     /**
      * @var int|null
      */
-    protected ?int $migrateFromChatId;
+    public readonly ?int $migrateFromChatId;
 
     // TODO: pinned_message
 
@@ -347,7 +347,7 @@ class Message extends BaseTelegramObject
     /**
      * @var string|null
      */
-    protected ?string $connectedWebsite;
+    public readonly ?string $connectedWebsite;
 
     // TODO: write_access_allowed
 

@@ -48,157 +48,158 @@ class ChatMember extends BaseTelegramObject
     /**
      * @var ChatMemberStatusEnum
      */
-    protected ChatMemberStatusEnum $status;
+    public readonly ChatMemberStatusEnum $status;
 
     /**
      * @var User
      */
-    protected User $user;
+    public readonly User $user;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isAnonymous;
+    public readonly ?bool $isAnonymous;
 
     /**
      * @var string|null
      */
-    protected ?string $customTitle;
+    public readonly ?string $customTitle;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canBeEdited;
+    public readonly ?bool $canBeEdited;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canManageChat;
+    public readonly ?bool $canManageChat;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canDeleteMessages;
+    public readonly ?bool $canDeleteMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canManageVideoChats;
+    public readonly ?bool $canManageVideoChats;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canRestrictMembers;
+    public readonly ?bool $canRestrictMembers;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canPromoteMembers;
+    public readonly ?bool $canPromoteMembers;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canChangeInfo;
+    public readonly ?bool $canChangeInfo;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canInviteUsers;
+    public readonly ?bool $canInviteUsers;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canPostStories;
+    public readonly ?bool $canPostStories;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canEditStories;
+    public readonly ?bool $canEditStories;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canDeleteStories;
+    public readonly ?bool $canDeleteStories;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canPostMessages;
+    public readonly ?bool $canPostMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canEditMessages;
+    public readonly ?bool $canEditMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canPinMessages;
+    public readonly ?bool $canPinMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canManageTopics;
+    public readonly ?bool $canManageTopics;
 
     /**
      * @var int|null
      */
-    protected ?int $untilDate;
+    public readonly ?int $untilDate;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isMember;
+    public readonly ?bool $isMember;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendMessages;
+    public readonly ?bool $canSendMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendAudios;
+    public readonly ?bool $canSendAudios;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendDocuments;
+    public readonly ?bool $canSendDocuments;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendPhotos;
+    public readonly ?bool $canSendPhotos;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendVideos;
+    public readonly ?bool $canSendVideos;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendVideoNotes;
+    public readonly ?bool $canSendVideoNotes;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendVoiceNotes;
+    public readonly ?bool $canSendVoiceNotes;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendPolls;
+    public readonly ?bool $canSendPolls;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendOtherMessages;
+    public readonly ?bool $canSendOtherMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canAddWebPagePreviews;
+    public readonly ?bool $canAddWebPagePreviews;
+
 
     /**
      * @param ChatMemberStatusEnum $status

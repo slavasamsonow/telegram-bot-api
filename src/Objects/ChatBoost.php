@@ -17,22 +17,23 @@ class ChatBoost extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $boostId;
+    public readonly string $boostId;
 
     /**
      * @var int
      */
-    protected int $addDate;
+    public readonly int $addDate;
 
     /**
      * @var int
      */
-    protected int $expirationDate;
+    public readonly int $expirationDate;
 
     /**
      * @var ChatBoostSource
      */
-    protected ChatBoostSource $source;
+    public readonly ChatBoostSource $source;
+
 
     /**
      * @param string $boostId

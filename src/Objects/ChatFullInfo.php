@@ -61,222 +61,222 @@ class ChatFullInfo extends BaseTelegramObject
     /**
      * @var int
      */
-    protected int $id;
+    public readonly int $id;
 
     /**
      * @var ChatTypeEnum
      */
-    protected ChatTypeEnum $type;
+    public readonly ChatTypeEnum $type;
 
     /**
      * @var string|null
      */
-    protected ?string $title;
+    public readonly ?string $title;
 
     /**
      * @var string|null
      */
-    protected ?string $username;
+    public readonly ?string $username;
 
     /**
      * @var string|null
      */
-    protected ?string $firstName;
+    public readonly ?string $firstName;
 
     /**
      * @var string|null
      */
-    protected ?string $lastName;
+    public readonly ?string $lastName;
 
     /**
      * @var bool|null
      */
-    protected ?bool $isForum;
+    public readonly ?bool $isForum;
 
     /**
      * @var int
      */
-    protected int $accentColorId;
+    public readonly int $accentColorId;
 
     /**
      * @var int
      */
-    protected int $maxReactionCount;
+    public readonly int $maxReactionCount;
 
     /**
      * @var ChatPhoto|null
      */
-    protected ?ChatPhoto $photo;
+    public readonly ?ChatPhoto $photo;
 
     /**
      * @var array|null
      */
-    protected ?array $activeUsernames;
+    public readonly ?array $activeUsernames;
 
     /**
      * @var Birthdate|null
      */
-    protected ?Birthdate $birthdate;
+    public readonly ?Birthdate $birthdate;
 
     /**
      * @var BusinessIntro|null
      */
-    protected ?BusinessIntro $businessIntro;
+    public readonly ?BusinessIntro $businessIntro;
 
     /**
      * @var BusinessLocation|null
      */
-    protected ?BusinessLocation $businessLocation;
+    public readonly ?BusinessLocation $businessLocation;
 
     /**
      * @var BusinessOpeningHours|null
      */
-    protected ?BusinessOpeningHours $businessOpeningHours;
+    public readonly ?BusinessOpeningHours $businessOpeningHours;
 
     /**
      * @var Chat|null
      */
-    protected ?Chat $personalChat;
+    public readonly ?Chat $personalChat;
 
     /**
      * @var ArrayOfReactionTypes|null
      */
-    protected ?ArrayOfReactionTypes $availableReactions;
+    public readonly ?ArrayOfReactionTypes $availableReactions;
 
     /**
      * @var string|null
      */
-    protected ?string $backgroundCustomEmojiId;
+    public readonly ?string $backgroundCustomEmojiId;
 
     /**
      * @var int|null
      */
-    protected ?int $profileAccentColorId;
+    public readonly ?int $profileAccentColorId;
 
     /**
      * @var string|null
      */
-    protected ?string $profileBackgroundCustomEmojiId;
+    public readonly ?string $profileBackgroundCustomEmojiId;
 
     /**
      * @var string|null
      */
-    protected ?string $emojiStatusCustomEmojiId;
+    public readonly ?string $emojiStatusCustomEmojiId;
 
     /**
      * @var int|null
      */
-    protected ?int $emojiStatusExpirationDate;
+    public readonly ?int $emojiStatusExpirationDate;
 
     /**
      * @var string|null
      */
-    protected ?string $bio;
+    public readonly ?string $bio;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasPrivateForwards;
+    public readonly ?bool $hasPrivateForwards;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasRestrictedVoiceAndVideoMessages;
+    public readonly ?bool $hasRestrictedVoiceAndVideoMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $joinToSendMessages;
+    public readonly ?bool $joinToSendMessages;
 
     /**
      * @var bool|null
      */
-    protected ?bool $joinByRequest;
+    public readonly ?bool $joinByRequest;
 
     /**
      * @var string|null
      */
-    protected ?string $description;
+    public readonly ?string $description;
 
     /**
      * @var string|null
      */
-    protected ?string $inviteLink;
+    public readonly ?string $inviteLink;
 
     /**
      * @var Message|null
      */
-    protected ?Message $pinnedMessage;
+    public readonly ?Message $pinnedMessage;
 
     /**
      * @var ChatPermissions|null
      */
-    protected ?ChatPermissions $permissions;
+    public readonly ?ChatPermissions $permissions;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSendPaidMedia;
+    public readonly ?bool $canSendPaidMedia;
 
     /**
      * @var int|null
      */
-    protected ?int $slowModeDelay;
+    public readonly ?int $slowModeDelay;
 
     /**
      * @var int|null
      */
-    protected ?int $unrestrictBoostCount;
+    public readonly ?int $unrestrictBoostCount;
 
     /**
      * @var int|null
      */
-    protected ?int $messageAutoDeleteTime;
+    public readonly ?int $messageAutoDeleteTime;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasAggressiveAntiSpamEnabled;
+    public readonly ?bool $hasAggressiveAntiSpamEnabled;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasHiddenMembers;
+    public readonly ?bool $hasHiddenMembers;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasProtectedContent;
+    public readonly ?bool $hasProtectedContent;
 
     /**
      * @var bool|null
      */
-    protected ?bool $hasVisibleHistory;
+    public readonly ?bool $hasVisibleHistory;
 
     /**
      * @var string|null
      */
-    protected ?string $stickerSetName;
+    public readonly ?string $stickerSetName;
 
     /**
      * @var bool|null
      */
-    protected ?bool $canSetStickerSet;
+    public readonly ?bool $canSetStickerSet;
 
     /**
      * @var string|null
      */
-    protected ?string $customEmojiStickerSetName;
+    public readonly ?string $customEmojiStickerSetName;
 
     /**
      * @var int|null
      */
-    protected ?int $linkedChatId;
+    public readonly ?int $linkedChatId;
 
     /**
      * @var ChatLocation|null
      */
-    protected ?ChatLocation $location;
+    public readonly ?ChatLocation $location;
 
 
     /**

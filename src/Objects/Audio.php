@@ -22,47 +22,48 @@ class Audio extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var int
      */
-    protected int $duration;
+    public readonly int $duration;
 
     /**
      * @var string|null
      */
-    protected ?string $performer;
+    public readonly ?string $performer;
 
     /**
      * @var string|null
      */
-    protected ?string $title;
+    public readonly ?string $title;
 
     /**
      * @var string|null
      */
-    protected ?string $file_name;
+    public readonly ?string $file_name;
 
     /**
      * @var string|null
      */
-    protected ?string $mime_type;
+    public readonly ?string $mime_type;
 
     /**
      * @var int|null
      */
-    protected ?int $fileSize;
+    public readonly ?int $fileSize;
 
     /**
      * @var PhotoSize|null
      */
-    protected ?PhotoSize $thumbnail;
+    public readonly ?PhotoSize $thumbnail;
+
 
     /**
      * @param string $fileId

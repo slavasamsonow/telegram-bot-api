@@ -16,17 +16,18 @@ class Birthdate extends BaseTelegramObject
     /**
      * @var int
      */
-    protected int $day;
+    public readonly int $day;
 
     /**
      * @var int
      */
-    protected int $month;
+    public readonly int $month;
 
     /**
      * @var int|null
      */
-    protected ?int $year;
+    public readonly ?int $year;
+
 
     /**
      * @param int $day

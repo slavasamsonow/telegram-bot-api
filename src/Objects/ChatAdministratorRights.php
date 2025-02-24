@@ -27,77 +27,78 @@ class ChatAdministratorRights extends BaseTelegramObject
     /**
      * @var bool
      */
-    protected bool $isAnonymous;
+    public readonly bool $isAnonymous;
 
     /**
      * @var bool
      */
-    protected bool $canManageChat;
+    public readonly bool $canManageChat;
 
     /**
      * @var bool
      */
-    protected bool $canDeleteMessages;
+    public readonly bool $canDeleteMessages;
 
     /**
      * @var bool
      */
-    protected bool $canManageVideoChats;
+    public readonly bool $canManageVideoChats;
 
     /**
      * @var bool
      */
-    protected bool $canRestrictMembers;
+    public readonly bool $canRestrictMembers;
 
     /**
      * @var bool
      */
-    protected bool $canPromoteMembers;
+    public readonly bool $canPromoteMembers;
 
     /**
      * @var bool
      */
-    protected bool $canChangeInfo;
+    public readonly bool $canChangeInfo;
 
     /**
      * @var bool
      */
-    protected bool $canInviteUsers;
+    public readonly bool $canInviteUsers;
 
     /**
      * @var bool
      */
-    protected bool $canPostStories;
+    public readonly bool $canPostStories;
 
     /**
      * @var bool
      */
-    protected bool $canEditStories;
+    public readonly bool $canEditStories;
 
     /**
      * @var bool
      */
-    protected bool $canDeleteStories;
+    public readonly bool $canDeleteStories;
 
     /**
      * @var bool
      */
-    protected bool $canPostMessages;
+    public readonly bool $canPostMessages;
 
     /**
      * @var bool
      */
-    protected bool $canEditMessages;
+    public readonly bool $canEditMessages;
 
     /**
      * @var bool
      */
-    protected bool $canPinMessages;
+    public readonly bool $canPinMessages;
 
     /**
      * @var bool
      */
-    protected bool $canManageTopics;
+    public readonly bool $canManageTopics;
+
 
     /**
      * @param bool $isAnonymous

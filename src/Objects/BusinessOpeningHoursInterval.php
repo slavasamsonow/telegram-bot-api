@@ -15,12 +15,13 @@ class BusinessOpeningHoursInterval
     /**
      * @var int
      */
-    protected int $openingMinute;
+    public readonly int $openingMinute;
 
     /**
      * @var int
      */
-    protected int $closingMinute;
+    public readonly int $closingMinute;
+
 
     /**
      * @param int $openingMinute

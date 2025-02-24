@@ -17,22 +17,23 @@ class MaskPosition extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $point;
+    public readonly string $point;
 
     /**
      * @var float
      */
-    protected float $xShift;
+    public readonly float $xShift;
 
     /**
      * @var float
      */
-    protected float $yShift;
+    public readonly float $yShift;
 
     /**
      * @var float
      */
-    protected float $scale;
+    public readonly float $scale;
+
 
     /**
      * @param string $point

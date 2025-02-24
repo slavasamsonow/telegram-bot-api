@@ -24,57 +24,58 @@ class ChatInviteLink extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $inviteLink;
+    public readonly string $inviteLink;
 
     /**
      * @var User
      */
-    protected User $creator;
+    public readonly User $creator;
 
     /**
      * @var bool
      */
-    protected bool $createsJoinRequest;
+    public readonly bool $createsJoinRequest;
 
     /**
      * @var bool
      */
-    protected bool $isPrimary;
+    public readonly bool $isPrimary;
 
     /**
      * @var bool
      */
-    protected bool $isRevoked;
+    public readonly bool $isRevoked;
 
     /**
      * @var string|null
      */
-    protected ?string $name;
+    public readonly ?string $name;
 
     /**
      * @var int|null
      */
-    protected ?int $expireDate;
+    public readonly ?int $expireDate;
 
     /**
      * @var int|null
      */
-    protected ?int $memberLimit;
+    public readonly ?int $memberLimit;
 
     /**
      * @var int|null
      */
-    protected ?int $pendingJoinRequestCount;
+    public readonly ?int $pendingJoinRequestCount;
 
     /**
      * @var int|null
      */
-    protected ?int $subscriptionPeriod;
+    public readonly ?int $subscriptionPeriod;
 
     /**
      * @var int|null
      */
-    protected ?int $subscriptionPrice;
+    public readonly ?int $subscriptionPrice;
+
 
     /**
      * @param string $inviteLink

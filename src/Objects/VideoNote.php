@@ -19,32 +19,33 @@ class VideoNote extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var int
      */
-    protected int $length;
+    public readonly int $length;
 
     /**
      * @var int
      */
-    protected int $duration;
+    public readonly int $duration;
 
     /**
      * @var PhotoSize|null
      */
-    protected ?PhotoSize $thumbnail;
+    public readonly ?PhotoSize $thumbnail;
 
     /**
      * @var int|null
      */
-    protected ?int $fileSize;
+    public readonly ?int $fileSize;
+
 
     /**
      * @param string $fileId

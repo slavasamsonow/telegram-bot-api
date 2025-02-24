@@ -27,77 +27,78 @@ class Sticker extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $fileId;
+    public readonly string $fileId;
 
     /**
      * @var string
      */
-    protected string $fileUniqueId;
+    public readonly string $fileUniqueId;
 
     /**
      * @var StickerTypeEnum
      */
-    protected StickerTypeEnum $type;
+    public readonly StickerTypeEnum $type;
 
     /**
      * @var int
      */
-    protected int $width;
+    public readonly int $width;
 
     /**
      * @var int
      */
-    protected int $height;
+    public readonly int $height;
 
     /**
      * @var bool
      */
-    protected bool $isAnimated;
+    public readonly bool $isAnimated;
 
     /**
      * @var bool
      */
-    protected bool $isVideo;
+    public readonly bool $isVideo;
 
     /**
      * @var PhotoSize|null
      */
-    protected ?PhotoSize $thumbnail;
+    public readonly ?PhotoSize $thumbnail;
 
     /**
      * @var string|null
      */
-    protected ?string $emoji;
+    public readonly ?string $emoji;
 
     /**
      * @var string|null
      */
-    protected ?string $setName;
+    public readonly ?string $setName;
 
     /**
      * @var File|null
      */
-    protected ?File $premiumAnimation;
+    public readonly ?File $premiumAnimation;
 
     /**
      * @var MaskPosition|null
      */
-    protected ?MaskPosition $maskPosition;
+    public readonly ?MaskPosition $maskPosition;
 
     /**
      * @var string|null
      */
-    protected ?string $customEmojiId;
+    public readonly ?string $customEmojiId;
 
     /**
      * @var bool|null
      */
-    protected ?bool $needsRepainting;
+    public readonly ?bool $needsRepainting;
 
     /**
      * @var int|null
      */
-    protected ?int $fileSize;
+    public readonly ?int $fileSize;
+
 
     /**
      * @param string $fileId

@@ -31,73 +31,73 @@ class Poll extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $id;
+    public readonly string $id;
 
     /**
      * @var string
      */
-    protected string $question;
+    public readonly string $question;
 
     /**
      * @var ArrayOfMessageEntities|null
      */
-    protected ?ArrayOfMessageEntities $questionEntities;
+    public readonly ?ArrayOfMessageEntities $questionEntities;
 
     /**
      * @var ArrayOfPollOptions
      */
-    protected ArrayOfPollOptions $options;
+    public readonly ArrayOfPollOptions $options;
 
     /**
      * @var int
      */
-    protected int $totalVoterCount;
+    public readonly int $totalVoterCount;
 
     /**
      * @var bool
      */
-    protected bool $isClosed;
+    public readonly bool $isClosed;
 
     /**
      * @var bool
      */
-    protected bool $isAnonymous;
-
+    public readonly bool $isAnonymous;
 
     /**
      * @var PollTypeEnum
      */
-    protected PollTypeEnum $type;
+    public readonly PollTypeEnum $type;
 
     /**
      * @var bool
      */
-    protected bool $allowsMultipleAnswers;
+    public readonly bool $allowsMultipleAnswers;
 
     /**
      * @var int|null
      */
-    protected ?int $correctOptionId;
+    public readonly ?int $correctOptionId;
 
     /**
      * @var string|null
      */
-    protected ?string $explanation;
+    public readonly ?string $explanation;
 
     /**
      * @var ArrayOfMessageEntities|null
      */
-    protected ?ArrayOfMessageEntities $explanationEntities;
+    public readonly ?ArrayOfMessageEntities $explanationEntities;
 
     /**
      * @var int|null
      */
-    protected ?int $openPeriod;
+    public readonly ?int $openPeriod;
 
     /**
      * @var int|null
      */
-    protected ?int $closeDate;
+    public readonly ?int $closeDate;
+
 
     /**
      * @param string $id

@@ -19,32 +19,33 @@ class BusinessConnection extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $id;
+    public readonly string $id;
 
     /**
      * @var User
      */
-    protected User $user;
+    public readonly User $user;
 
     /**
      * @var int
      */
-    protected int $userChatId;
+    public readonly int $userChatId;
 
     /**
      * @var int
      */
-    protected int $date;
+    public readonly int $date;
 
     /**
      * @var bool
      */
-    protected bool $canReply;
+    public readonly bool $canReply;
 
     /**
      * @var bool
      */
-    protected bool $isEnabled;
+    public readonly bool $isEnabled;
+
 
     /**
      * @param string $id

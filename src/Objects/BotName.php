@@ -14,7 +14,8 @@ class BotName extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $name;
+    public readonly string $name;
+
 
     /**
      * @param string $name

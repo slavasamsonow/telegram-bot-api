@@ -15,12 +15,13 @@ class BotCommand extends BaseTelegramObject
     /**
      * @var string
      */
-    protected string $command;
+    public readonly string $command;
 
     /**
      * @var string
      */
-    protected string $description;
+    public readonly string $description;
+
 
     protected function setCommand(string $command): void
     {

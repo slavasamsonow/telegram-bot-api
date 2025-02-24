@@ -21,17 +21,18 @@ class MenuButton extends BaseTelegramObject
     /**
      * @var MenuButtonTypeEnum
      */
-    protected MenuButtonTypeEnum $type;
+    public readonly MenuButtonTypeEnum $type;
 
     /**
      * @var string|null
      */
-    protected ?string $text;
+    public readonly ?string $text;
 
     /**
      * @var WebAppInfo|null
      */
-    protected ?WebAppInfo $webApp;
+    public readonly ?WebAppInfo $webApp;
+
 
     /**
      * @param MenuButtonTypeEnum $type
