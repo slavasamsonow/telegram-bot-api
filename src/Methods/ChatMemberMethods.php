@@ -111,12 +111,12 @@ trait ChatMemberMethods
     /**
      * @param GetChatMemberCountRequest $request
      *
-     * @return array
+     * @return int
      * @throws TelegramBotApiException
      */
-    public function getChatMemberCount(GetChatMemberCountRequest $request): array
+    public function getChatMemberCount(GetChatMemberCountRequest $request): int
     {
-        return $this->post('getChatMemberCount', $request);
+        return (int) $this->post('getChatMemberCount', $request)['result'];
     }
 
     /**
