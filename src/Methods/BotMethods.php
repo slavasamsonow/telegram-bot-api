@@ -58,6 +58,18 @@ trait BotMethods
     }
 
     /**
+     * @param GetFileRequest $request
+     *
+     * @return string
+     * @throws TelegramBotApiException
+     */
+    public function getFileUrl(GetFileRequest $request): string
+    {
+        $file = $this->getFile($request);
+        return $this->fileEndpoint.$file->fileId;
+    }
+
+    /**
      * @param GetBusinessConnectionRequest $request
      *
      * @return BusinessConnection

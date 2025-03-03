@@ -25,10 +25,13 @@ class TelegramBotApi
     public const VERSION = '1.0.0';
 
     /** @var string telegram bot api url without token */
-    protected const URL_PREFIX = 'https://api.telegram.org/bot';
+    protected const URL_PREFIX = 'https://api.telegram.org';
 
     /** @var string  telegram bot api url with token */
     private string $endpoint;
+
+    /** @var string */
+    private string $fileEndpoint;
 
     /**
      * @var string token
@@ -45,7 +48,8 @@ class TelegramBotApi
     public function __construct(string $token, string $endpoint = null)
     {
         $this->setToken($token);
-        $this->endpoint = ($endpoint ?: self::URL_PREFIX) . $token . '/';
+        $this->endpoint = ($endpoint ?: self::URL_PREFIX) . '/bot' . $token . '/';
+        $this->fileEndpoint = ($endpoint ?: self::URL_PREFIX) . '/file/bot' . $token . '/';
     }
 
 
