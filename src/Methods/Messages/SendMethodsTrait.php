@@ -11,6 +11,7 @@ use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendDocumentRequest
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendMediaGroupRequest;
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendMessageRequest;
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendPhotoRequest;
+use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendPollRequest;
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendVideoNoteRequest;
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendVideoRequest;
 use Slavasamsonow\TelegramBotApi\RequestObjects\SendRequests\SendVoiceRequest;
@@ -118,7 +119,18 @@ trait SendMethodsTrait
     // TODO: sendLocation
     // TODO: sendVenue
     // TODO: sendContact
-    // TODO: sendPoll
+
+    /**
+     * @param SendPollRequest $request
+     *
+     * @return Message
+     * @throws TelegramBotApiException
+     */
+    public function sendPoll(SendPollRequest $request): Message
+    {
+        return Message::fromResponse($this->post('sendPoll', $request)['result']);
+    }
+
     // TODO: sendDice
 
     /**
