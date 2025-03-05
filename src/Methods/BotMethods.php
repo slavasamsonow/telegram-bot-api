@@ -66,7 +66,7 @@ trait BotMethods
     public function getFileUrl(GetFileRequest $request): string
     {
         $file = $this->getFile($request);
-        return $this->fileEndpoint.$file->fileId;
+        return $this->fileEndpoint . $file->fileId;
     }
 
     /**
@@ -221,6 +221,8 @@ trait BotMethods
     public function getMyDefaultAdministratorRights(
         GetMyDefaultAdministratorRightsRequest $request
     ): ChatAdministratorRights {
-        return ChatAdministratorRights::fromResponse($this->post('getMyDefaultAdministratorRights', $request)['result']);
+        return ChatAdministratorRights::fromResponse(
+            $this->post('getMyDefaultAdministratorRights', $request)['result']
+        );
     }
 }
