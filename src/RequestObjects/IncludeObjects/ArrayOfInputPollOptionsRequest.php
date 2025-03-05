@@ -12,7 +12,7 @@ class ArrayOfInputPollOptionsRequest extends BaseCollectionObject
      *
      * @throws TelegramBotApiException
      */
-    public function __construct(array $inputPollOptions)
+    public function __construct(array $inputPollOptions = [])
     {
         foreach ($inputPollOptions as $inputPollOption) {
             $this->addOption($inputPollOption);
