@@ -439,11 +439,11 @@ class Message extends BaseTelegramObject
     }
 
     /**
-     * @param User $from
+     * @param User|null $from
      *
      * @return void
      */
-    protected function setFrom(User $from): void
+    protected function setFrom(?User $from): void
     {
         $this->from = $from;
     }
