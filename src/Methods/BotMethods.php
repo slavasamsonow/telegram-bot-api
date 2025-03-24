@@ -66,7 +66,7 @@ trait BotMethods
     public function getFileUrl(GetFileRequest $request): string
     {
         $file = $this->getFile($request);
-        return $this->fileEndpoint . $file->fileId;
+        return $this->fileEndpoint . $file->filePath;
     }
 
     /**
