@@ -4,7 +4,6 @@ namespace Slavasamsonow\TelegramBotApi\Objects;
 
 use Slavasamsonow\TelegramBotApi\ArrayOfObject\ArrayOfReactionTypes;
 use Slavasamsonow\TelegramBotApi\Enums\ChatTypeEnum;
-use Slavasamsonow\TelegramBotApi\RequestObjects\ChatRequests\ChatPermissions;
 
 class ChatFullInfo extends BaseTelegramObject
 {
