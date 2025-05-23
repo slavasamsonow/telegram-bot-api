@@ -34,9 +34,9 @@ class User extends BaseTelegramObject
     public readonly bool $isBot;
 
     /**
-     * @var string
+     * @var string|null
      */
-    public readonly string $firstName;
+    public readonly ?string $firstName;
 
     /**
      * @var string|null
@@ -126,19 +126,19 @@ class User extends BaseTelegramObject
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
 
     /**
-     * @param string $firstName
+     * @param string|null $firstName
      *
      * @return void
      */
-    protected function setFirstName(string $firstName): void
+    protected function setFirstName(?string $firstName): void
     {
         $this->firstName = $firstName;
     }
