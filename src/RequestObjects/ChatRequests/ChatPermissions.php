@@ -56,4 +56,9 @@ class ChatPermissions extends BaseRequestObject
         $this->setCanPinMessages($canPinMessages);
         $this->setCanManageTopics($canManageTopics);
     }
+
+    public static function all(bool $all): static
+    {
+        return new static($all, $all, $all, $all, $all, $all, $all, $all, $all, $all, $all, $all, $all, $all);
+    }
 }
